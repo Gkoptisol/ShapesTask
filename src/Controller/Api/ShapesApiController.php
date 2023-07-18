@@ -10,6 +10,9 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ShapesApiController
 {
+    /**
+     *Calculating Surface and diameter for circle and triangle
+     */
     #[Route('/api/v1/{shape}/{a_or_radius}/{b}/{c}')]
     public function shape($shape, $a_or_radius = null, $b = null, $c = null): Response
     {
